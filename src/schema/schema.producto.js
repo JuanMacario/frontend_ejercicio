@@ -29,10 +29,10 @@ const validatedProduct = z.object({
         .string()
         .optional(),
 
-    precio: z
-        .number('El precio deben ser números decimales'),
-    stock: z
-        .number('El stock debe ser un número entero válido')
+    precio: z.any(),
+        //.number('El precio deben ser números decimales').optional(),
+    stock: z.any()
+        //.number('El stock debe ser un número entero válido').optional()
 })
 
 export { validatedProduct }

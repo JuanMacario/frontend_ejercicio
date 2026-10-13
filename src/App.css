@@ -6,6 +6,8 @@
 
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .section_title {
@@ -145,4 +147,10 @@ thead tr {
     align-items: center;
     justify-content: center;
     z-index: 100;
+}
+
+.loading {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
 }

@@ -1,0 +1,29 @@
+.notification {
+    position: fixed;
+    top: 2rem;
+    right: 0rem;
+    width: 35rem;
+    height: 10rem;
+    padding: 1rem;
+    transition: 2rem;
+    z-index: 10000 !important;
+}
+
+.status_code {
+    font-size: 3rem;
+}
+
+.message_response {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+}
+
+.fracaso {
+    border: 0.1rem rgb(255, 49, 49) solid;
+    background-color: #ffa9b7;
+}
+
+.exito {
+    border: 0.1rem rgb(49, 255, 56) solid;
+    background-color: rgb(172, 254, 180);
+}

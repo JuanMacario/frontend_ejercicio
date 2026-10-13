@@ -1,0 +1,55 @@
+.contenedor {
+    background-color: white;
+    width: 60rem;
+    height: 18rem;
+    padding: 2.5rem;
+    border-radius: 1rem;
+}
+
+.encabezado {
+    width: 100%;
+    font-size: 4.5rem;
+}
+
+.titulo {
+    width: 100%;
+    font-size: 2.5rem;
+}
+
+.descripcion {
+    width: 100%;
+    font-size: 1.8rem;
+    color: rgb(84, 84, 84);
+    margin-top: 1.5rem;
+}
+
+.botones {
+    width: 100%;
+    justify-content: end;
+}
+
+.botones button {
+    margin-top: 2rem;
+    margin-right: 1rem;
+    font-size: 2rem;
+    padding: 0.3em;
+    font-weight: bold;
+}
+
+.btn-cancelar {
+    background-color: rgb(242, 241, 241);
+    font-weight: normal !important;
+}
+
+.btn-cancelar:hover {
+    background-color: white;
+}
+
+.btn-confirmar {
+    background-color: #3191f9;
+    color: white;
+}
+
+.btn-confirmar:hover {
+    background-color: #4fa4ff;
+}

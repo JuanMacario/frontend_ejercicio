@@ -1,16 +1,56 @@
-# React + Vite
+# Ejercicio Full Stack
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto de un listado de productos, para la práctica de backend y frontend, 
 
-Currently, two official plugins are available:
+## Tecnologias utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Backend
+- JavaScript
+- Express
+- PossgresSQL
+- Zod
 
-## React Compiler
+### frontend
+- React
+- Vite
+- Zod
+- Reack Hook Form   
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Requisitos y comandos para ejecutar el proyecto
 
-## Expanding the ESLint configuration
+### Backend
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Tener activo un contenedor de Docker compose
+- Instalar las depencias npm
+
+ ```
+ npm install
+ npm run dev
+ ```
+### Frontend
+
+- Instalar las dependicias npm
+```
+ npm install
+ npm run dev
+```
+### Base de datos
+
+- Tener un gestor de base de datos.
+- Tener una conexion con una base de datos PosgresSQL.
+- Crear una base de datos 
+- Ejecutar el siguiente Script SQL para la creacion de la tabla 
+```
+create table productos (
+	id serial primary key,
+	codigo varchar(20) unique not null,
+	nombre varchar(100) not null,
+	descripcion text,
+	categoria varchar(50) not null,
+	marca varchar(50) not null,
+	precio numeric(10,2) not null,
+	stock integer not null,
+	estado boolean not null default true,
+	fecha_creacion timestamp not null default current_timestamp
+);
+```
