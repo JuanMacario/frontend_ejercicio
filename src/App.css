@@ -19,6 +19,21 @@ body {
     text-align: center;
 }
 
+.seccion-action_header {
+    width: 95%;
+    padding: 1rem;
+    display: flex;
+    justify-content: end;
+}
+
+.seccion-action_header button {
+    font-size: 2.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(0, 136, 255);
+    color: white;
+}
+
 .section_table {
     width: 100%;
     height: auto;
@@ -28,48 +43,106 @@ body {
 }
 
 .table_products {
-    border: 0.1rem black solid;
     width: 85%;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 .table_products thead {
-    border: 0.1rem black solid;
+    padding: 1rem;
 }
 
 .table_products thead tr td {
-    font-size: 1.5rem;
-    padding-bottom: 1rem;
+    font-size: 2.2rem;
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+    border-left: 0.1rem rgb(199, 198, 198) solid;
+    border-right: 0.1rem rgb(199, 198, 198) solid;
 }
 
 .table_products tbody tr td {
-    font-size: 0.8rem;
-    padding: 0.3rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-left: 0.1rem rgb(199, 198, 198) solid;
+    border-right: 0.1rem rgb(199, 198, 198) solid;
+}
+
+.left {
+    border-left: none !important;
+}
+
+.rigth {
+    border-right: none !important;
+}
+
+.table_products,
+thead tr {
+    border-bottom: 0.1rem black solid;
+}
+
+.table_products {
+    border-collapse: collapse;
+}
+
+.btn-status {
+    cursor: pointer;
 }
 
 .status_active {
-    font-size: 0.8rem;
-    padding: 0.2rem;
+    font-size: 1.5rem;
+    padding: 0.4rem;
     border-radius: 0.2rem;
     background-color: rgb(151, 243, 154);
     color: #22572a;
     border: 0.1rem #22572a solid;
+    font-weight: bold;
 }
 
 .status_inactive {
-    font-size: 0.8rem;
-    padding: 0.2rem;
+    font-size: 1.5rem;
+    padding: 0.4rem;
     border-radius: 0.2rem;
-    background-color: rgb(151, 243, 154);
-    color: #22572a;
-    border: 0.1rem #22572a solid;
+    background-color: #f7b2b2;
+    color: #8f1a1a;
+    border: 0.1rem #8f1a1a solid;
+    font-weight: bold;
+}
+
+.action_buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.action_buttons button {
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    cursor: pointer;
 }
 
 .action_buttons .btn_edit {
-    font-size: 1rem;
-    padding: 0.1rem;
+    background-color: rgb(175, 249, 249);
+    color: rgb(39, 99, 99);
+    border: 0.1rem rgb(42, 120, 127) solid;
+    border-radius: 0.2rem;
+    font-weight: bold;
+    width: 5rem;
 }
 
 .action_buttons .btn_delete {
-    font-size: 1rem;
+    background-color: #f7b2b2;
+    color: #8f1a1a;
+    border: solid 0.1rem #8f1a1a;
+    font-weight: bold;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(15, 23, 42, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
 }

@@ -1,0 +1,86 @@
+.modal_ventana {
+    width: 75rem;
+    height: 64rem;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+}
+
+.hedear_form {
+    width: 95%;
+    height: auto;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hedear_form h2 span {
+    font-size: 3rem;
+}
+
+.section_form {
+    width: 91.5%;
+    padding: 3rem;
+
+}
+
+.form-prduct {
+    width: 100%;
+    height: auto;
+
+}
+
+.section_inputs {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    gap: 2rem;
+    justify-content: space-evenly;
+    width: 100% !important;
+    height: 47rem !important;
+}
+
+.section_form div {
+    width: 32rem;
+    min-height: 2rem;
+    height: auto;
+}
+
+.section_form label {
+    font-size: 2rem;
+}
+
+.section_form div input {
+    width: 30rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.section_form div span {
+    font-size: 1.3rem;
+    color:  #cc1414;
+}
+
+.text-area_descripcion {
+    width: 66rem !important;
+}
+
+.text-area_descripcion textarea {
+    width: 64rem;
+    max-width: 64rem;
+    height: 12rem;
+    max-height: 12rem;
+    font-size: 1.5rem;
+    padding: 0.6rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.section-buttons {
+    width: 100% !important;
+}
+
+.btn-cancel,
+.btn-submit {
+    font-size: 2.5rem;
+    margin-right: 2rem;
+    padding: 0.5rem;
+}
